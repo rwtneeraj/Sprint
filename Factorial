@@ -1,0 +1,21 @@
+3 start fact:5 result:0
+start:4 fact zero 53
+7 fact num
+2 fact one counter1
+start zero counter1  24
+7 num result
+stop:9
+7 counter1 counter2
+start zero counter2 43
+7 result num
+7 zero result
+2 counter1 one counter1
+3 16
+one:1 result num result
+2 counter2 one counter2
+3 27
+7 one result
+3 stop
+counter1:0 counter2:0
+num:0
+zero:0
