@@ -1,0 +1,183 @@
+3 start first:n1 
+start:7 first currentstatus
+
+4 currentstatus:0 jump jumpmaster
+
+7 currentstatus haltstarter
+4 haltstarter:0 halt dohalt
+
+7 currentstatus addstarter
+7 addstarter:0 desicion
+4 desicion add foradd
+4 desicion sub forsub
+3 lessEqual
+foradd:0 1 addSubOperator
+3 add-subtract
+ forsub:0 2 addSubOperator
+7 currentstatus subtractor
+4 subtractor:0 sub add-subtract
+ 
+  
+lessEqual:7 currentstatus equalandlessthan
+7 equalandlessthan:0 desicion1
+4 desicion1 four goequal
+4 desicion1 five golessthen
+3 copy1
+goequal:0 4 desicion2
+3 isequal&lessthan
+golessthen:0 5 desicion2
+3 isequal&lessthan
+ 
+copy1:7 currentstatus copypointer
+7 copypointer:0 desicion4
+4 desicion4 copy copyworker
+
+move:7 currentstatus movepointer
+4 movepointer:0 zero Mover
+
+mulitplication:7 currentstatus mulitpointer
+4 mulitpointer:0 multiply multimaster
+
+jumpmaster:7 first address
+1 currentstatus one currentstatus
+7 currentstatus value
+7 value:0 value2
+2 value2 one value2
+1 first value2 currentstatus
+3 7
+
+dohalt:9
+
+add-subtract:1 currentstatus one currentstatus
+7 currentstatus addvalue
+7 addvalue:0 addvalue1
+1 currentstatus one currentstatus
+7 currentstatus addvalue2 
+7 addvalue2:0 addvalue
+2 addvalue1 one addvalue1
+1 first addvalue1 addvalue1
+2 addvalue one addvalue
+1 first addvalue addvalue
+1 currentstatus one currentstatus
+ 7 addvalue1 cell1
+7 addvalue cell2
+7 currentstatus reusult_cell_location
+2 reusult_cell_location:0 one reusult_cell_location
+1 first reusult_cell_location reusult_cell_location
+7 reusult_cell_location result
+
+
+addSubOperator:1 cell1:0 cell2:0 result:0
+1 currentstatus one currentstatus
+3 7
+
+isequal&lessthan:1 currentstatus one currentstatus
+7 currentstatus greatvalue
+7 greatvalue:0 lessvalue
+1 currentstatus one currentstatus
+7 currentstatus demovalue
+7 demovalue:0 greatvalue
+2  lessvalue one lessvalue
+1 first lessvalue lessvalue
+2 greatvalue one greatvalue
+1 first greatvalue greatvalue
+1 currentstatus  one currentstatus
+7 lessvalue compare1
+7 greatvalue compare2
+desicion2:0 compare1:0 compare2:0 
+true
+1 currentstatus one currentstatus
+ 3 7
+ true:7 currentstatus location
+7 location:0 location2
+2 location2 one location2
+1 first location2 currentstatus
+3 7
+
+
+copyworker:1 currentstatus one currentstatus
+7 currentstatus rightcopy
+7 rightcopy:0 leftcopy
+1 currentstatus one currentstatus
+7 currentstatus democopy
+7 democopy:0 rightcopy
+2 leftcopy one leftcopy
+1 first leftcopy leftcopy
+2 rightcopy one rightcopy
+1 first rightcopy rightcopy
+7 leftcopy copycell1
+7 rightcopy copycell2
+7 copycell1:0 copycell2:0 
+1 currentstatus one currentstatus
+3 7
+
+Mover:1 currentstatus one currentstatus
+7 currentstatus rightMover
+7 rightMover:0 leftMover
+1 currentstatus one currentstatus 
+7 currentstatus demoMover
+7 demoMover:0 rightMover
+2 rightMover one rightMover
+1 first rightMover rightMover
+7 leftMover movecell1
+7 rightMover movecell2
+0 movecell1:0
+movecell2:0
+1 currentstatus one currentstatus
+3 7
+
+multimaster:1 currentstatus one currentstatus
+7 currentstatus rightmultiple
+7 rightmultiple:0 leftmultiple
+1 currentstatus one currentstatus
+7 currentstatus demomultiple
+7 demomultiple:0 rightmultiple
+2 leftmultiple one leftmultiple
+1 first leftmultiple leftmultiple
+2 rightmultiple one rightmultiple
+1 first rightmultiple
+rightmultiple
+7 leftmultiple:0 length
+7 rightmultiple multiple1
+7 multiple1:0 multiple2
+loop:5 zero length mulitprocessing
+1 currentstatus one currentstatus
+7 currentstatus mulitcell
+7 mulitcell:0 multiresult
+2 multiresult one multiresult
+1 first multiresult multiresult
+7 multiple3 multiresult:0
+1 currentstatus one currentstatus
+3 7
+
+mulitprocessing:1 multiple3 multiple2 multiple3
+2 length one length
+3 loop
+ 
+desicion:0
+desicion1:0
+location2:0
+addvalue1:0
+lessvalue:0
+desicion4:0
+leftcopy:0
+leftMover:0
+value2:0
+pointer:0
+multiple2:0
+multiple3:0
+
+length:0
+zero:0
+one:1
+jump:3
+add:1
+sub:2
+copy:7
+four:4
+five:5
+ifequal:4
+address:0
+halt:9
+multiply:10
+n1:3 5 3 4 3 4 9 9 0 0 0 0  
