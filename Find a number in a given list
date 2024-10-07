@@ -1,0 +1,14 @@
+3 start 
+ first_element:n1 length:5 target:9 result:0
+start:7 first_element address
+5 zero length 15
+stop:9
+4 address:n1 target 29
+1 address one address
+1 zero one zero
+3 10
+7 one result
+3 stop
+zero:0
+one:1
+n1:3 4 8 9 6
