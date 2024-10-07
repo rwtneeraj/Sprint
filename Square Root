@@ -1,0 +1,24 @@
+3 start num:12 res:0 
+start:res num zero 18
+start count1 num 23
+2 count1 one res
+stop:9
+7 zero res
+3 stop
+7 count1 temp
+7 count1 count2
+start zero count2 50
+res res num  60
+start num res 65
+7 zero res
+one:1 count1 one count1
+3 9
+1 temp res res
+2 count2 one count2
+3 29
+7 count1 res
+3 stop
+3 13
+count1:2
+count2:0 temp:0
+zero:0
