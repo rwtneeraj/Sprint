@@ -1,0 +1,26 @@
+3 5 first_element_location:74 length:5
+start:7 first_element_location address1
+2 length one length2
+7 first_element_location address2
+1 first_element_location length2  address3
+7 address3 address4
+7 length length1
+start count length1 30
+stop:9
+7 address1:0 jump
+7 address3:0 address2:0
+7 jump address4:0
+2 length1 one length1
+1 count one count
+1 address1 one address1
+1 address2 one address2
+2 address3 one address3
+2 address4 one address4 
+3 25
+one:1
+jump:0
+2 length one length2
+count:0
+length1:0
+length2:0
+3 4 5 6 7 
